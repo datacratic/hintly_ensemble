@@ -1,0 +1,19 @@
+= About this entry
+
+First, thanks to Github for putting on a great contest.
+
+This entry was supposed to be a blend of xlvector and jeremybarnes' solutions, but due to time it ended up being just xlvector's.
+
+Liang Xiang (xlvector) will explain his model shortly, Jeremy's already explained a great deal in his README (read it, it's great!).
+
+== The secret sauce?
+
+More data equals better results.
+
+We also crammed in more heuristics.
+
+== Next steps
+
+Anyone wanting to build on this should probably pay close attention to blending. The algorithms themselves aren't incredibly new, but there's probably low-hanging fruit with neural networks, decision trees (or combinations) for blending ordered and weighted lists.
+
+
