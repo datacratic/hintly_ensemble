@@ -26,4 +26,7 @@ This algo is in knni directory. I use cosine similarity with inverse user freque
 
 This algo is in knnu directory. I use cosine similarity with inverse item frequency to measure user-user similarity.     
      
+=== Hybrid User/Item KNN
+This algo is in knnui directory
+
      
