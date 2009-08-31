@@ -16,13 +16,13 @@ We also crammed in more heuristics.
 
 Anyone wanting to build on this should probably pay close attention to blending. The algorithms themselves aren't incredibly new, but there's probably low-hanging fruit with neural networks, decision trees (or combinations) for blending ordered and weighted lists.
 
-= Algorithms
+== Algorithms
 
-== Item Based KNN
+=== Item Based KNN
 
 This algo is in knni directory. I use cosine similarity with inverse user frequency to measure item-item similarity.
 
-== User Based KNN
+=== User Based KNN
 
 This algo is in knnu directory. I use cosine similarity with inverse item frequency to measure user-user similarity.     
      
