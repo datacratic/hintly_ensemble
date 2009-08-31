@@ -1,0 +1,3 @@
+g++ -o bagging main.cpp -I../include/
+./bagging
+cp results0.txt ../../xlvector-github-contest/
