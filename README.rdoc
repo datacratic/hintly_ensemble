@@ -46,3 +46,10 @@ Further more, we know the date of the repo when it is created. Let T1 be the ear
 In the contest, we find users who watch a lot of repos are hard to be predicted. This is because they have diversity interest, therefore, it is hard to cover their interest in only 10 recommendations. In this way, we should let recommendations list include different interest field of users and we have to improve the diversity of recommendations.
 
 This algo is implemented in function diversity() in file blending/main.cpp
+
+=== Extra data
+repo_watch number. I download repo information by Github API, a repo have many information, but watch times is the best information. Let N1(i) be the watch time of repo i in data.txt and N2(i) be the real watch time of repo i, then, if N1(i) == N2(i), it means i will never be in the recommendation list.
+
+collaborators information, this information is also very important, it is used in directory repos/
+
+Without these extra data, I can only get 2600 by the data github provide. So, extra data is important in the contest.
