@@ -32,9 +32,11 @@ This algo is in knnui directory
 === Removing unlike items
 If we want to find the repos a user will watch, we can slove this problem by removing items he/she will not watch. In this way, I use some extremum value to remove unlike items.
 
-For example, given a user u, if the popularity of the most popular repo he/she watch is N. Then, in the recommendation list, we should decent the likeness of the repos which popularity is larger than N.
+For example, given a user u, if the popularity of the most popular repo he/she watch is N. Then, in the recommendation list, we should decent the likeness of the repos which popularity is larger than N. In blending/main.cpp, function userMostPopular do this task.
 
-Further more, we know the date of the repo when it is created. Let T1 be the earliest create date of repos user u watch, and T2 be the latest create date of repos user u watch. Then, we should increase the weight of repos created between T1 and T2.
+Further more, we know the date of the repo when it is created. Let T1 be the earliest create date of repos user u watch, and T2 be the latest create date of repos user u watch. Then, we should increase the weight of repos created between T1 and T2. In blending/main.cpp, function postProcessByDate do this task.
           
 === Result Diversity
 In the contest, we find users who watch a lot of repos are hard to be predicted. This is because they have diversity interest, therefore, it is hard to cover their interest in only 10 recommendations. In this way, we should let recommendations list include different interest field of users and we have to improve the diversity of recommendations.
+
+This algo is implemented in function diversity() in file blending/main.cpp
