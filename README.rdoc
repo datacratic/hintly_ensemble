@@ -29,4 +29,9 @@ This algo is in knnu directory. I use cosine similarity with inverse item freque
 === Hybrid User/Item KNN
 This algo is in knnui directory
 
+=== Removing unlike items
+     If we want to find the repos a user will watch, we can slove this problem by removing items he/she will not watch. In this way, I use some extremum value to remove unlike items.
+     For example, given a user u, if the popularity of the most popular repo he/she watch is N. Then, in the recommendation list, we should decent the likeness of the repos which popularity is larger than N.
+          Further more, we know the date of the repo when it is created. Let T1 be the earliest create date of repos user u watch, and T2 be the latest create date of repos user u watch. Then, we should increase the weight of repos created between T1 and T2.
+          
      
