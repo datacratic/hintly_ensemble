@@ -22,9 +22,15 @@ Anyone wanting to build on this should probably pay close attention to blending.
 
 This algo is in knni directory. I use cosine similarity with inverse user frequency to measure item-item similarity.
 
+We also use reponame and language information in measuring item-item similarity, this algo is implemented in knni-all.
+
 === User Based KNN
 
-This algo is in knnu directory. I use cosine similarity with inverse item frequency to measure user-user similarity.     
+This algo is in knnu directory. I use cosine similarity with inverse item frequency to measure user-user similarity.
+
+We also use reponame and language information in measuring user-user similarity, this algo is implemented in knnu-all.
+
+Let's take language information for example, given two user a, b. Let La[i] be the percent of repo which is written in language i user a watch. Then, the language similarity of user a, b can be calculated by cosine(La, Lb).
      
 === Hybrid User/Item KNN
 This algo is in knnui directory
