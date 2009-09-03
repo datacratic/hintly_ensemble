@@ -1,0 +1,1 @@
+g++ -o reponame main.cpp -I../include/
