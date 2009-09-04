@@ -36,7 +36,7 @@ Let's take language information for example, given two user a, b. Let La[i] be t
 This algo is in knnui directory
 
 === Removing unlike items
-If we want to find the repos a user will watch, we can slove this problem by removing items he/she will not watch. In this way, I use some extremum value to remove unlike items.
+If we want to find the repos a user will watch, we can solve this problem by removing items he/she will not watch. In this way, I use some extremum value to remove unlike items.
 
 For example, given a user u, if the popularity of the most popular repo he/she watch is N. Then, in the recommendation list, we should decent the likeness of the repos which popularity is larger than N. In blending/main.cpp, function userMostPopular do this task.
 
@@ -55,6 +55,6 @@ collaborators information, this information is also very important, it is used i
 Without these extra data, I can only get 2600 by the data github provide. So, extra data is important in the contest.
 
 === Blending
-The most important lesson I learn from Netflix Prize is one algo can not slove everything. In this way, we can get better result by blending algos I used above. I used a simple linear blending method, a divide users into 3 groups by the number of repos they watched. In every group, I use SA to learn the linear blending weight of different algos and get the best blending weight. Then, I reset these weight by submission. Github contest allow a competitor to sumbit many results every day, so the best blending weight can be learning by submission, therefore, the best result is overfitting in test set.
+The most important lesson I learn from Netflix Prize is one algo can not solve everything. In this way, we can get better result by blending algos I used above. I used a simple linear blending method, a divide users into 3 groups by the number of repos they watched. In every group, I use simulated annealing to learn the linear blending weight of different algos and get the best blending weight. Then, I reset these weight by submission. Github contest allow a competitor to sumbit many results every day, so the best blending weight can be learning by submission, therefore, the best result is overfitting in test set.
 
 However, if I only using the blending weight got from SA, I can only get 253x in test set. So, I think jeremybarnes did a good job in github contest.
